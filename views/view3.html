@@ -1,0 +1,65 @@
+<div>
+    <header ng-include="'header.html'"></header>
+</div>
+<div class="banner">
+    <img src="content_images/court1.jpg">
+    <h2 class="entry-title-view3">НОВАЯ ФОРМУЛА РАСЧЕТА ПЕНСИИ В УКРАИНЕ</h2>
+</div>
+<div class="view-container">
+    <div class="view3_holder">
+        <div class="container_calculation_formula">
+            <p><h3>Согласно пенсионной реформе новый алгоритм расчета выглядит следующим образом:</h3></p>
+            <div class="calculation_formula">
+                <p><strong>P = Zз &times; Kз &times; Kc</strong>,</p>
+            </div>
+            <p><em>где:</em></p>
+            <p><em><strong>P</strong> &ndash; пенсия, выраженная в гривнах; </em></p>
+            <p><em><strong>Zз</strong> &ndash; средняя месячная заработная плата в Украине за&nbsp;3 последних календарных года (исключение в 2018 году - берется за 2 года 2016 и 2017); </em></p>
+            <p><em><strong>Kз</strong> &ndash; коэффициент заработной платы (соотношение между средней выплатой по стране и той, которую на тот момент получал пенсионер. Так, если, к примеру, зарплата за выбранный период в два раза превышала среднюю по стране, то коэффициент зарплаты будет равен 2, если на 50% &ndash; 1,5); </em></p>
+            <p><em><strong>Kc</strong> &ndash; коэффициент страхового стажа, определяется как множитель продолжительности лет стажа работы на величину оценки 1-го года страхового стажа, который с 1 января 2018 года составляет 1 (до этого был 1,35).</em></p>
+            <p>Вычисление каждого значения, в зависимости от минимальной зарплаты, выполняется индивидуально. Пенсия зависит от каждого показателя.</p>
+        </div>
+        <div class="container_calculation_formula">
+            <p>В законодательстве установлен порядок вычисления коэффициента стажа отчислений в Пенсионный фонд Украины &ndash;<strong>Kc</strong>. Для расчета применяется формула:</p>
+            <div class="calculation_formula">
+                <p><strong>Kc = (Cm &times; Bc)/(100% &times; 12)</strong>,</p>
+            </div>
+            <p ><em>где:</em></p>
+            <p><em><strong>Cm</strong>&ndash; суммарное количество календарных месяцев, в течение которых производились отчисления в фонд; </em></p>
+            <p><em><strong>Bc</strong> &ndash; оценка страхового стажа за 12 месяцев (обязательно выражается в процентах). За период участия в системе общеобязательного государственного пенсионного страхования величина оценки 1-го года страхового стажа равняется 1%.</em></p>  
+        </div> 
+        <div class="data_calculation_formula">
+            <h3 style="color:#3d6f82;">Для предворительной оценки Вашей пенсии внесите данные:</h3>
+            <div class="form-container">
+                <form name="calculateForm" ng-submit="calculatePencion()" novalidate>
+                    <ul>
+                        <li>
+                            <span><strong>Zз</strong> &ndash; средняя месячная заработная</span>
+                            <input type="number" name="Zz" class="mandatory" ng-model="calculate.Zz" ng-required="true">
+                        </li>
+                        <li>
+                            <span><strong>Kз</strong> &ndash; коэффициент заработной платы</span>
+                            <input type="number" name="Kz" class="mandatory" ng-model="calculate.Kz" ng-required="true">
+                        </li>
+                        <li>
+                            <span><strong>Cm</strong>&ndash; суммарное количество календарных месяцев</span>
+                            <input type="number" name="Cm" class="mandatory" ng-model="calculate.Cm" ng-required="true">
+                        </li>
+                        <li>
+                            <span><strong>Bc</strong> &ndash; оценка страхового стажа за 12 месяцев</span>
+                            <input type="number" name="Bc" class="mandatory" ng-model="calculate.Bc" ng-required="true">
+                        </li>
+                    </ul>
+                <input type="submit" class="submit" value="РАСЧИТАТЬ" name="submit" ng-click="showNote=true" ng-disabled="calculateForm.$invalid">
+                <div class="calculate-messege" style=" display:flex; width:720px; color:#3d6f82;" ng-init="showNote=false" ng-show="calculateForm.$valid && showNote">
+                    <p>По предворительному расчету ваша пенсия составит:  {{result}} гривен.</br> Для более точной и детальной оценки Вашей пенсии обращайтесь к нашим консультантам. </p>
+                </div>
+            </form>
+            </div>
+        </div>     
+    </div>
+</div>
+
+<div>
+    <footer ng-include="'footer.html'"></footer>
+</div>
