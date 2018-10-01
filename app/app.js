@@ -24,6 +24,7 @@ pensionApp.controller('ContactController', ['$scope', '$location','$http', funct
 
             $location.path("/contact-success");
         };
+        
    
   }]); 
   
@@ -34,13 +35,27 @@ pensionApp.controller('CalculateController', ['$scope', function($scope) {
         $scope.result = $scope.calculate.Zz * $scope.calculate.Kz * $scope.calculate.Cm * $scope.calculate.Bc;
     }
   }]);
+
+
+pensionApp.controller('CounterController', ['$scope', function($scope) {
+        $scope.counter = 211;
+        // var updateCounter = function() {
+        //     $scope.counter++;
+        //     $scope.load(updateCounter);
+        // };
+        // updateCounter();
+        $scope.load = function(){
+            $scope.counter++;
+        }
+    }]);
   
 //routeProvider
   pensionApp.config(['$routeProvider', function($routeProvider){
     
     $routeProvider
     .when('/home',{
-        templateUrl: 'views/home.html'
+        templateUrl: 'views/home.html',
+        // controller: 'ContactController'
     })
     .when('/view1',{
         templateUrl: 'views/view1.html'

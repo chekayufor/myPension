@@ -1,14 +1,15 @@
 
+    <div class='logo' id="logo"></div>
     <div id="header-home">
-        <header ng-include="'header.html'"></header>
+        <header ng-include="'header-home.html'"></header>
     </div>
     
     <div class="container"> 
         <div class="box" id="box-view1">
-            <img src="content_images/tea.jpg">
+            <img ng-src="content_images/tea.jpg">
             <div class="content" id="view1">
                 <h2>Пенсия "Под Ключ"</h2>
-                <p>Наши юристы предоставляют качественные юридические услуги в сфере пенсионного обеспечения граждан и имеет многолетний опыт помощи гражданам в оформлении пенсии. Специалисты нашей компании предоставят Вам консультацию по всем вопросам, касающихся оформления пенсии, а также помогут Вам оформить пенсию в кратчайшие сроки при минимальном Вашем участии.</p>
+                <p>Наши юристы предоставляют качественные юридические услуги в сфере пенсионного обеспечения граждан и имеет многолетний опыт помощи гражданам в оформлении пенсии. Специалисты нашей компании предоставят Вам консультацию по всем вопросам, касающихся оформления пенсии, поиск лучшего периода зарплаты для назначения пенсии, проверка, уже назначеной пенсии, назначение пенсии : по Списку 1 по списку 2 , по выслуге лет по возрасту, научной пенсии, подтверждение имеющегося стажа, подтверждение стажа через архивы, предварительный расчет пенсии, судебные тяжбы с пенсионным фондом, а также помогут Вам оформить пенсию в кратчайшие сроки при минимальном Вашем участии.</p>
                 <div class="more_details">
                     <a href ="#!/view1">Подробнее...</a>
                 </div>
@@ -45,26 +46,114 @@
         </div>
         <div id="about-us">
             <div id="content-about-us">
-                <h2>Добро пожаловать на сайт компании </br>«Пенсия под Ключ»!</h2>
+                <h2>Добро пожаловать на сайт компании </br>«Пенсионный центр» 
+                    - юридическая помощь в пенсионных вопросах!</h2>
                 <p>Мы – команда молодых, энергичных и очень целеустремленных специалистов, желающих сделать мир чуточку лучше. Каждый день мы помогаем людям, столкнувшимся с нарушением их прав и интересов. Законных, выстраданных нашими с вами предками прав и интересов.</p>
                 <h3>Наш принцип работы – честность!</h3>
                 <p>Никогда и ни при каких обстоятельствах мы не обманываем клиента. Наши условия работы – белые. Наши цены – прозрачные. Если мы один раз назвали величину вознаграждения за наши знания, старания и решение вашей проблемы – значит такой она и останется. Мы не «тянем» деньги из клиента. И не обещаем того, чего не в силах выполнить.</p>
-                <h3>Услуги</h3>
-                <p>Компания «Пенсия под Ключ» предсталяет большой спектр услуг:</p>
-                <ul>
-                    <a href ="#!/view6"><li>Экспресс-консультация</li></a>
-                    <a href ="#!/view6"><li>Устная консультация юриста</li></a>
-                    <a href ="#!/view6"><li>Skype-консультация юриста</li></a>
-                    <a href ="#!/view6"><li>Выездная устная консультация юриста</li></a>
-                    <a href ="#!/view6"><li>Письменная консультация юриста в форме правового заключения</li></a>
-                    <a href ="#!/view6"><li>Подготовка документов</li></a>
-                    <a href ="#!/view6"><li>Подготовка искового заявления</li></a>
-                    <a href ="#!/view6"><li>Сам себе юрист</li></a>
-                    <a href ="#!/view6"><li>Комплексное сопровождение интересов клиента</li></a>
-                    <a href ="#!/view6"><li>Судебное представительство</li></a>
-                </ul>
                 <h3>Как мы работаем</h3>
-                <p>Компания «Пенсия под Ключ» работает для того, чтобы помогать вам решать сложные проблемы в различных областях пенсионного права. Проконсультироваться у юриста можно в любое время как дистанционным способом, так и при личном общении. <span><a href ="#!/view7" class="more">Подробнее...</a></span></p>
+                <p>Организация «Пенсионный центр» работает для того, чтобы помогать вам решать сложные проблемы в различных областях пенсионного права. Проконсультироваться у юриста можно в любое время как дистанционным способом, так и при личном общении. <span><a href ="#!/view7" class="more">Подробнее...</a></span></p>
+                <h3>Услуги</h3>
+                <!--<p>Компания «Пенсия под Ключ» предсталяет большой спектр услуг:</p>-->
+                    <div id="services-list">
+                        <div class="service-in-list">
+                            <img ng-src="content_images/internet-cons.jpg" alt="consultation"/>
+                            <a href ="#!/view6">Экспресс-консультация</a>
+                        </div>
+                        <div class="service-in-list">
+                            <img ng-src="content_images/ustnaya-kons.jpg" alt="consultation"/>
+                            <a href ="#!/view6">Устная консультация юриста</a>
+                        </div>
+                        <div class="service-in-list">
+                            <img ng-src="content_images/skype-consult.jpg" alt="consultation"/>
+                            <a href ="#!/view6">Skype-консультация юриста</a>
+                        </div>
+                        <div class="service-in-list">
+                            <img ng-src="content_images/vyezdnaya-consultaciya.jpg" alt="consultation"/>
+                            <a href ="#!/view6">Выездная устная консультация юриста</a>
+                        </div>
+                        <div class="service-in-list">
+                            <img ng-src="content_images/su-razvod.jpg" alt="consultation"/>
+                            <a href ="#!/view6">Письменная консультация юриста в форме правового заключения</li></a>
+                        </div>
+                        <div class="service-in-list">
+                            <img ng-src="content_images/zptd.jpg" alt="consultation"/>
+                            <a href ="#!/view6">Подготовка документов</a>
+                        </div>
+                        <div class="service-in-list">
+                            <img ng-src="content_images/iskovoe.jpg" alt="consultation"/>
+                            <a href ="#!/view6">Подготовка искового заявления</a>
+                        </div>
+                        <div class="service-in-list">
+                            <img ng-src="content_images/sam-sebe-jurist.jpg" alt="consultation"/>
+                            <a href ="#!/view6">Сам себе юрист</a>
+                        </div>
+                        <div class="service-in-list">
+                                <img ng-src="content_images/ispolnitelnoe-proizvodstvo.jpd.png" alt="consultation"/> 
+                            <a href ="#!/view6">Комплексное сопровождение интересов клиента</a>
+                        </div>
+                        <div class="service-in-list">
+                            <img ng-src="content_images/sudebnoe-predstavitelstvo.jpg" alt="consultation"/>
+                            <a href ="#!/view6">Судебное представительство</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- <div ng-controller='CounterController' ng-init='load()'  id="client-counter">
+            <div>
+                <h3></h3>
+                <p>{{counter}}</p> 
+            </div> -->
+        </div>
+        <div ng-controller='ContactController'  class="container-contact">
+            <div class="contact-form-back">
+            </div>
+            <div class="contact-form">
+                <form name="emailForm" ng-submit="sendEmail()" novalidate>
+                    <h2>ОТПРАВТЕ НАМ СООБЩЕНИЕ</h2>
+                    <div class="wrap-input">
+                        <label class="label-input" for="first_name">Имя</label>
+                        <input type="text" name="first_name" class="input" ng-model="email.name" ng-required="true">
+                        <div ng-show="emailForm.name.$touched && emailForm.name.$invalid">
+                        </div>
+                    </div>
+                    <div class="wrap-input">
+                        <label class="label-input" for="last_name">last_name</label>
+                        <input type="text" name="last_name" class="input" ng-model="email.lastName">
+                    </div>
+                    <div class="wrap-input">
+                        <label class="label-input" for="phone">phone</label>
+                        <input type="text" name="phone" class="input" ng-model="email.phone">
+                    </div>
+                    <div class="wrap-input">
+                        <label class="label-input" for="email">Email Address</label>    
+                        <input type="text" name="email" class="input" ng-model="email.email" ng-required="true">
+                        <div ng-show="emailForm.email.$touched && emailForm.email.$invalid">
+                            <!-- <small style="color: red; display: flex; text-align: center;">Введите e-mail</small> -->
+                        </div>
+                    </div>
+                    <div class="wrap-input">
+                        <label class="label-input" for="message">Message</label>
+                        <textarea cols="1" rows="5" resize="no" name="message" class="input" ng-model="email.message" ng-required="true"></textarea>
+                        <div ng-show="emailForm.message.$touched && emailForm.message.$invalid">
+                            <!-- <small style="color: red; display: block; text-align: center;">Введите вопрос</small> -->
+                        </div>
+                    </div>
+                    <input type="submit" class="submit" value="Send" ng-disabled="emailForm.$invalid" (click)="onSubmit(first_name.value, last_name.value,phone.value, email.value, message.value)" ng-click="sendEmail()">
+                    <div class="contact-form-social">
+                            <a href="https://www.facebook.com/Pensia.dp.ua/" target="_blank" class="contact-form-social-item">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+    
+                            <!-- <a href="#" class="contact-form-social-item">
+                              <i class="fa fa-facebook-messenger" aria-hidden="true"></i>                            </a>
+                            </a> -->
+                            <!-- <a href="#" class="contact-form-social-item">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a> -->
+                    </div>
+                </form>
+                
             </div>
         </div>
     </div>
