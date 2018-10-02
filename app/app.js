@@ -39,7 +39,7 @@ pensionApp.controller('CalculateController', ['$scope', function($scope) {
   pensionApp.controller('navController', ['$scope', '$location', function($scope, $location) {
     
     $scope.isCurrent = function(destination){
-        return destination ===$location.path();
+        return destination === $location.path();
     }
 
     // $scope.currentStyle = {
@@ -49,7 +49,6 @@ pensionApp.controller('CalculateController', ['$scope', function($scope) {
     //     "border-radius" : "20px"
     // }
   }]);
-
 
 pensionApp.controller('CounterController', ['$scope', function($scope) {
         $scope.counter = 211;
