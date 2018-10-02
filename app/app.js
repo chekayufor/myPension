@@ -36,6 +36,20 @@ pensionApp.controller('CalculateController', ['$scope', function($scope) {
     }
   }]);
 
+  pensionApp.controller('navController', ['$scope', '$location', function($scope, $location) {
+    
+    $scope.isCurrent = function(destination){
+        return destination ===$location.path();
+    }
+
+    // $scope.currentStyle = {
+    //     "color" : "#3d6f82",
+    //     "background" : "#f4fafd",
+    //     "border" : "2px solid #f4fafd",
+    //     "border-radius" : "20px"
+    // }
+  }]);
+
 
 pensionApp.controller('CounterController', ['$scope', function($scope) {
         $scope.counter = 211;
