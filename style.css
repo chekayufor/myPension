@@ -13,6 +13,10 @@
         width: 100%;
         margin: auto;
     }
+    #home-container
+    {
+        justify-content: space-around;
+    }
     #logo, #logo-footer
     {
         min-width: 230px;
@@ -247,6 +251,7 @@
         transition: .9s ease;
         margin: 35px 5px 40px 5px;
         flex-wrap: wrap; 
+        justify-content: space-around;
     }
     div#services-list:hover
     {
@@ -322,7 +327,7 @@
         margin-bottom: 20px;
     }
     .container-contact .contact-form-back {
-        width: 720px;
+        width: 45%;
         height: 100%;
         z-index: 1;
         background-image: url('content_images/bg-01.jpg');
@@ -332,7 +337,7 @@
       }
       .container-contact .contact-form
       {
-        width: 700px;
+        width: 55%;
         height: 100%;
         display: flex;
         flex-direction: row;
@@ -356,12 +361,11 @@
     }
     .container-contact .contact-form form h2 
     {
-        width: 400px;
         display: flex;
         text-align: center;
         margin-bottom: 55px;
-        margin-left: 20px;
         margin-top: 45px;
+        font-size: 28px;
     }
       label.label-input 
     {
@@ -476,6 +480,14 @@
         .contact-form-back {
           display: none;
         }
+        .contact-form form .wrap-input{
+            width: 340px;
+        }
+        input.input,
+        textarea.input{
+            width: 300px;
+        }
+
         #view1 h2,
         #view1 p
         {
@@ -503,21 +515,29 @@
 
       }
       @media (max-width: 497px) {
+
         .contact-form {
             margin-left: 90px;
         }
         #view1 p{
             display: none;
         }
+        div#footer-content h2,
         #view1 h2,
-        div#footer-content h2 {
-            font-size: 16px;
+        #about-us #content-about-us h2,
+        #about-us #content-about-us h3,
+        .container-contact .contact-form form h2 {
+            font-size: 22px;
         } 
         #logo{
             margin-top: 225px;  
         }
       }
       @media (max-width: 376px) {
+        #home-container{
+            width: 100%; 
+            justify-content: space-around;
+        }
         .contact-form {
           width: 30%;
           margin-left: 116px;
@@ -526,7 +546,7 @@
             padding-bottom: 35px;
         }
         #box-view1 #view1 h2{
-            font-size: 28px;
+            font-size: 12px;
             margin-left: 130px;
         }
         #box-view1 #view1 .more_details a{
@@ -1103,7 +1123,7 @@
 /*footer-home*/
     #footer-content
     {
-       max-width: 1600px;;
+       max-width: 1600px;
         height: auto;
         margin: auto;
         display: flex;
@@ -1119,9 +1139,7 @@
         display: flex;
         justify-content: space-around;
         text-align: center;
-        height: 40px;
-        font-size: 38px;
-        margin: auto;
+        font-size: 30px;
         padding-top: 55px;
     }
      #footer-content #footer-home
@@ -1139,7 +1157,6 @@
     div#footer-home .footer-map
     {
         display: flex;
-        width: 450px;
         flex-direction: column;
         justify-content: center;
     }
@@ -1151,7 +1168,6 @@
     div#footer-home .footer-contact
     {
         display: flex;
-        width: 450px;
         flex-direction: column;
         justify-content: center;
     }

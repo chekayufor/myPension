@@ -4,7 +4,7 @@
         <header ng-include="'header-home.html'"></header>
     </div>
     
-    <div class="container"> 
+    <div class="container" id="home-container"> 
         <div class="box" id="box-view1">
             <img ng-src="content_images/tea.jpg">
             <div class="content" id="view1">
@@ -21,7 +21,7 @@
                     <h2>Пенсионные законы в Украине</h2>
                     <p>О том, какова минимальная пенсия в Украине, каким образом она устанавливается, и кто имеет право на ее получение в свете последних изменений пенсионного законодательства...</p>
                     <div class="more_details"     style="margin-left: 75px;">
-                        <a href ="#!/view2">Подробнее...</a>
+                        <a href ="#!/view2#pensionnye-zakony-v-ukraine-kto-imeet-pravo-na-poluchenie-pensii">Подробнее...</a>
                     </div>
                 </div>   
             </div>
@@ -30,7 +30,7 @@
                     <h2>Размер пенсии пенсионерам выехавшим на ПМЖ</h2>
                     <p>В 2009 году в Украине были признаны неконституционными некоторые статьи Закона о пенсиях, запрещавшие выплату пенсии выехавшим на постоянное место жительства за границу. Этим фактически была устранена единственная причина для отказа в выплате пенсии.</p>
                     <div class="more_details">
-                        <a href ="#!/view5">Подробнее...</a>
+                        <a href ="#!/view5#razmer-pensii-repatriant">Подробнее...</a>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                     <h2>Расчет пенсии</h2>
                     <p>Размер минимальной пенсии в Украине определяют по специальной формуле.Наша задача помочь разобраться в столь интенсивном потоке информации, выяснить правила и методику расчета пенсии...</p>
                     <div class="more_details">
-                        <a href ="#!/view3">Подробнее...</a>
+                        <a href ="#!/view3#pensia-calculation">Подробнее...</a>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,6 @@
                 <h3></h3>
                 <p>{{counter}}</p> 
             </div> -->
-        </div>
         <div ng-controller='ContactController'  class="container-contact">
             <div class="contact-form-back">
             </div>
