@@ -30,8 +30,8 @@ app.post('/email', function(req, res) {
     const fullMessage = JSON.stringify(req.body);
 
     var msg = {
-        to: 'chekayufor@gmail.com',
-        from: 'chekayufor@gmail.com',
+        to: 'pensia.dp.ua@pensia.dp.ua',
+        from: 'pensia.dp.ua@pensia.dp.ua',
         subject: 'Sending with SendGrid is Fun',
         text: 'and easy to do anywhere, even with Node.js',
         html: `<strong>${fullMessage}</strong>`,
